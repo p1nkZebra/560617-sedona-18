@@ -49,7 +49,61 @@
           </p>
         </section>
 
-<!--        form will be here-->
+        <form class="review__form form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form__names names">
+            <b class="names__title">Представьтесь:</b>
+            <div class="names__item first-name">
+              <label class="first-name__label" for="first-name">Имя*:</label>
+              <input id="first-name" class="first-name__input" type="text" name="first-name" value="Петр" placeholder="">
+            </div>
+            <div class="names__item second-name">
+              <label class="second-name__label" for="second-name">Фамилия*:</label>
+              <input id="second-name" class="second-name__input" type="text" name="second-name" value="Иванов" placeholder="">
+            </div>
+            <div class="names__item middle-name">
+              <label class="middle-name__label" for="middle-name">Отчество:</label>
+              <input id="middle-name" class="middle-name__input" type="text" name="middle-name" value="Александрович" placeholder="">
+            </div>
+          </div>
+
+          <div class="form__contacts contacts">
+            <b class="contacts__title">Контактная информация:</b>
+            <div class="contacts__item mobile">
+              <label class="mobile__label" for="mobile">Контактный телефон*:</label>
+              <input id="mobile" class="mobile__input" type="text" name="mobile" value="Введите телефон" placeholder="">
+              <button class="mobile__icon" type="button"></button>
+            </div>
+            <div class="contacts__item email">
+              <label class="email__label" for="email">Электронная почта*:</label>
+              <input id="email" class="email__input" type="text" name="email" value="Введите e-mail" placeholder="">
+              <button class="email__icon" type="button"></button>
+            </div>
+          </div>
+
+          <div class="form__impression impression">
+            <b class="impression__title">Ваше общее впечатление:</b>
+            <input class="impression__radio" type="radio" name="impression-item" value="Скорее положительное">Скорее положительное<br>
+            <input class="impression__radio" type="radio" name="impression-item" value="Скорее отрицательное">Скорее отрицательное<br>
+            <input class="impression__radio" type="radio" name="impression-item" value="Затрудняюсь ответить">Затрудняюсь ответить<br>
+          </div>
+
+          <div class="form__visited visited">
+            <b class="visited__title">Посещенные достопримечательности:</b>
+            <input class="visited__checkbox visited__checkbox--checked" type="checkbox" name="visited-item" value="ост Дьявола" checked>Мост Дьявола<br>
+            <input class="visited__checkbox visited__checkbox--checked" type="checkbox" name="visited-item" value="Гора-Колокол" checked>Гора-Колокол<br>
+            <input class="visited__checkbox visited__checkbox--checked" type="checkbox" name="visited-item" value="Слайд-парк" checked>Слайд-парк<br>
+            <input class="visited__checkbox" type="checkbox" name="visited-item" value="Красные скалы">Красные скалы<br>
+          </div>
+
+          <div class="form__emotions emotions">
+            <b class="emotions__title">Опишите свои эмоции:</b>
+            <textarea class="emotions__text" cols="25" rows="7" placeholder="Опишите подробно все свои восторги">
+            </textarea>
+          </div>
+
+          <button type="submit">Отправить отзыв</button>
+
+        </form>
 
       </section>
 
