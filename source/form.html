@@ -31,8 +31,6 @@
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">Форма отзыва. Оставьте свой отзыв</h1>
-
       <section class="intro-pic">
         <figure>
           <img class="intro-pic__text-sedona" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
@@ -42,14 +40,96 @@
 
       <section class="review">
         <section class="intro">
-          <h2 class="visually-hidden">Оставьте свой отзыв</h2>
+          <h1 class="visually-hidden">Форма отзыва</h1>
           <b class="intro__slogan">Оставьте свой отзыв</b>
           <p class="intro__description">Помогите нашим отелям стать лучше!
             оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </section>
 
-<!--        form will be here-->
+        <form class="review__form form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="text-inputs">
+            <h2 class="text-inputs__title">Представьтесь:</h2>
+            <div class="text-inputs__item text-input">
+              <label class="text-input__label" for="first-name">Имя*:</label>
+              <input class="text-input__input" id="first-name" type="text" name="first-name" value="Петр" placeholder="">
+            </div>
+            <div class="text-inputs__item text-input">
+              <label class="text-input__label" for="second-name">Фамилия*:</label>
+              <input class="text-input__input" id="second-name" type="text" name="second-name" value="Иванов" placeholder="">
+            </div>
+            <div class="text-inputs__item text-input">
+              <label class="text-input__label" for="middle-name">Отчество:</label>
+              <input class="text-input__input" id="middle-name" type="text" name="middle-name" value="Александрович" placeholder="">
+            </div>
+          </div>
+
+          <div class="text-inputs">
+            <h2 class="text-inputs__title">Контактная информация:</h2>
+            <div class="text-inputs__item text-input">
+              <label class="text-input__label" for="mobile">Контактный телефон*:</label>
+              <input class="text-input__input" id="mobile" type="text" name="mobile" value="Введите телефон" placeholder="">
+              <span class="text-input__icon"></span>
+            </div>
+            <div class="text-inputs__item text-input">
+              <label class="text-input__label" for="email">Электронная почта*:</label>
+              <input class="text-input__input" id="email" type="text" name="email" value="Введите e-mail" placeholder="">
+              <span class="text-input__icon"></span>
+            </div>
+          </div>
+
+          <div class="radio-inputs">
+            <h2 class="radio-inputs__title">Ваше общее впечатление:</h2>
+            <div class="radio-inputs__item radio-input">
+              <input class="radio-input__input" id="good-impression" type="radio" name="impression" value="Скорее положительное">
+              <span></span>
+              <label class="radio-input__label" for="good-impression">Скорее положительное</label>
+            </div>
+            <div class="radio-inputs__item radio-input">
+              <input class="radio-input__input" id="bad-impression" type="radio" name="impression" value="Скорее отрицательное">
+              <span></span>
+              <label class="radio-input__label" for="bad-impression">Скорее отрицательное</label>
+            </div>
+            <div class="radio-inputs__item radio-input">
+              <input class="radio-input__input" id="no-impression" type="radio" name="impression" value="Затрудняюсь ответить">
+              <span></span>
+              <label class="radio-input__label" for="no-impression">Затрудняюсь ответить</label>
+            </div>
+          </div>
+
+          <div class="checkbox-inputs">
+            <h2 class="checkbox-inputs__title">Посещенные достопримечательности:</h2>
+            <div class="checkbox-inputs__item checkbox-input checkbox-input--checked">
+              <input class="checkbox-input__input" id="devil-bridge" type="checkbox" name="visited" value="Мост Дьявола" checked>
+              <span></span>
+              <label class="checkbox-input__label" for="devil-bridge">Мост Дьявола</label>
+            </div>
+            <div class="checkbox-inputs__item checkbox-input checkbox-input--checked">
+              <input class="checkbox-input__input" id="mountain-bell" type="checkbox" name="visited" value="Гора-Колокол" checked>
+              <span></span>
+              <label class="checkbox-input__label" for="mountain-bell">Гора-Колокол</label>
+            </div>
+            <div class="checkbox-inputs__item checkbox-input checkbox-input--checked">
+              <input class="checkbox-input__input" id="slide-park" type="checkbox" name="visited" value="Слайд-парк" checked>
+              <span></span>
+              <label class="checkbox-input__label" for="slide-park">Слайд-парк</label>
+            </div>
+            <div class="checkbox-inputs__item checkbox-input">
+              <input class="checkbox-input__input" id="red-rocks" type="checkbox" name="visited" value="Красные скалы">
+              <span></span>
+              <label class="checkbox-input__label" for="red-rocks">Красные скалы</label>
+            </div>
+          </div>
+
+          <div class="textarea-inputs">
+            <h2 class="textarea-inputs__title">Опишите свои эмоции:</h2>
+            <textarea class="textarea-inputs__item textarea-input" cols="25" rows="7" placeholder="Опишите подробно все свои восторги">
+            </textarea>
+          </div>
+
+          <button type="submit">Отправить отзыв</button>
+
+        </form>
 
       </section>
 
